@@ -1,0 +1,180 @@
+
+.boxx{
+  position:fixed;
+ left:600px;
+}
+
+.container{
+  display:flex;
+}
+.box1{
+background-color: rgb(250, 129, 210);
+width:200px;
+height:200px;
+border-radius:10px;
+display:inline-block;
+transition-duration: 1s; 
+}
+
+.box1:hover{
+  border-radius: 50%;
+
+}
+
+
+.box2{
+background-color: rgb(0, 225, 255);
+width:150px;
+height:150px;
+overflow:hidden;
+border-radius:10px;
+padding:5px 5px;
+font-size: small;
+margin:10px 10px;
+}
+
+
+.box3{
+background-color: rgba(0, 119, 255, 0.438);
+width:200px;
+height:200px;
+position:relative;
+left: 130px;
+}
+
+
+.box4{
+  background-color: rgba(0, 89, 255, 0.116);
+  width:150px;
+  height:150px;
+  transition-property: transform;
+  transition-duration:1s;
+  }
+
+  .box4:hover{
+    transform:rotate(30deg);
+  }
+
+  .box5{
+    background-color: rgb(0, 89, 255);
+    width:100px;
+    height:100px;
+    transition-property: transform;
+    transition-duration:1s;
+  }
+      
+.box5:hover{
+  transform:translate( 50px,20px);
+}
+
+
+  
+
+h1{color:rgb(255, 0, 76);
+  text-align: left;
+ font-family: serif;
+
+ 
+}
+<!--プロパティ　値-->
+article{font-size:12px;
+}
+p { font-family:fantasy;
+  
+}
+
+h3
+{background-image:url(R1.JPG); width:300px;
+font-family:cursive;
+
+}  
+
+.backimg{
+  margin:20px;
+  width: 500px;
+  box-shadow:8px 8px 5px #444;
+  padding:8px 12px;
+  background-image:url(R1.JPG)
+  
+  /* linear-gradient(180deg,#fff,rgb(139, 248, 96) 40%,rgb(166, 151, 248)); */
+
+}
+
+
+
+.dvv3{
+  width:30em;
+ padding:8px 12px;
+ background-image:linear-gradient(180deg,#fff,rgb(188, 252, 11) 40%,rgb(4, 248, 37));
+ 
+ }
+ 
+
+.dvv1{
+ width:20em;
+box-shadow:8px 8px 5px #444;
+padding:8px 12px;
+background-image:linear-gradient(180deg,#fff,rgb(188, 252, 11) 40%,rgb(4, 248, 37));
+
+}
+
+
+.dvv2{
+  width:20em;
+ border:1px solid #333;
+ box-shadow:20px 20px 15px rgb(253, 104, 17);
+ padding:8px 12px;
+ background-image:linear-gradient(180deg,#fff,rgb(252, 108, 41,0.5) 50%,rgb(248, 134, 4));
+ 
+ }
+
+
+.lifeplan{
+width: 700px;
+border: 3px solid rgb(19, 3, 161);
+padding:8px 15px;
+box-shadow:8px 8px 5px blue;
+background-image:linear-gradient(180deg,#fff,rgba(255, 0, 157, 0.267) 40%,rgba(138, 4, 248, 0.384));
+}
+
+
+h2{
+color:salmon;
+}
+
+
+.container2{
+ display:flex;
+ flex-wrap:wrap;
+
+}
+
+
+.dvv4{
+  margin:15x;
+  width:35em;
+  box-shadow:8px 8px 5px #444;
+  padding:8px 12px;
+  background-color:rgba(252, 11, 172, 0.336);
+}  
+
+.dvv5{
+  margin:25px;
+width:500px;
+box-shadow:10px 10px 30px rgb(136, 122, 100) ;
+padding:8px 15px;
+background-color:antiquewhite;
+
+}
+
+.culasu{
+color:red;
+font-family:cursive
+
+}
+
+.zokusei{
+color:white;
+font-family:monospace;
+
+}
