@@ -267,13 +267,15 @@ CSSでやるべきなのかな・・・？😢
 <hr>
 
 <p id="5">
-<strong>逸失利益</strong><br>
+<strong>逸失利益</strong>　※作成中<br>
   <form oninput="result.value = Number(a.value) *0.8* Number(c.value)-Number(b.value);">
   1年間の年収<input type="number" name="a" id="a" size="5">円 ×0.8
   <br>
   × 退職するまで、あと<input type="number" name="c" id="c" size="5">年<br>
+  - 故人の生活費（毎月の金額を入力）<br>
+  - 生命保険総額 ＋　解約返戻金総額（適当な時点）　＋　住宅ロ－ン残高<br>
   - 遺族年金総額<input type="number" name="b" id="b" size="5">円<br>=
-  <output name="result" for="a b c"> 毎月いくら必要になるか？</output>（円）
+  <output name="result" for="a b c"> 総額いくら必要になるか？</output>（円）
 </form>
 </p>
 
