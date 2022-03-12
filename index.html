@@ -133,10 +133,16 @@ CSSでやるべきなのかな・・・？😢
 
 <br><br>
 
-<article>
-  <h2>家計簿</h2>
- <div class="lifeplan">
-<p id="7">
+
+
+ <div class="container3">
+   <ul class="menu">
+     <li><a href="#"class="active"data-id="about">１８歳以下の子供が４人</a></li>
+     <li><a href="#"data-id="service">１８歳以下の子供が2人</a></li>
+     <li><a href="#"data-id="contact">１８歳以下の子供が1人</a></li>
+   </ul>
+
+   <section class="content active"id="about">
 <strong>遺族年金　計算方法</strong>　※１８歳以下の子供が４人<br>
   （遺族基礎年金78万900円と子の加算＋遺族厚生年金）<br>
   
@@ -185,9 +191,9 @@ CSSでやるべきなのかな・・・？😢
   <br>
  </form>
 </p>
-      <br><hr><br>
+</section>
 
-  <p id="8">
+<section class="content"id="service">
  遺族年金とは…（A）遺族基礎年金78万900円と子の人数に応じた加算額＋（B）遺族厚生年金 <br> <br>
  （A）<strong>【遺族基礎年金】</strong>　※１８歳以下の子供が２人のケース<br>
 
@@ -227,9 +233,9 @@ CSSでやるべきなのかな・・・？😢
  </form><br>
 </p>
 
-  <br><hr><br>
+  </section>
 
-<p id="9">
+  <section class="content"id="contact">
 <strong>【遺族年金】</strong>  ※１８歳以下の子供が1人のケース<br>
 （A）遺族基礎年金<br>
   <form oninput="result.value 
@@ -264,7 +270,11 @@ CSSでやるべきなのかな・・・？😢
  </form>
 </p>
 
-<hr>
+  </section>
+</div>
+
+
+
 
 <p id="5">
 <strong>逸失利益</strong>　※作成中<br>
@@ -273,7 +283,7 @@ CSSでやるべきなのかな・・・？😢
   <br>
   × 退職するまで、あと<input type="number" name="c" id="c" size="5">年<br>
   - 故人の生活費（毎月の金額を入力）　＋　故人の資産（相続財産）<br>
-  - 生命保険総額 ＋　解約返戻金総額（適当な時点）　＋　住宅ロ－ン残高　-　住宅ロ－ン支出<br>
+  - 生命保険受取総額 ＋　解約返戻金総額（適当な時点）　＋　住宅ロ－ン残高　-　住宅ロ－ン支出<br>
   ＋　遺族の負担増　＋　遺族の収入減<br>
   ×　子供の成長にともなうエンゲル係数・生活費の上昇率　×物価上昇<br>
   - 遺族年金総額<input type="number" name="b" id="b" size="5">円<br>=
@@ -306,7 +316,6 @@ CSSでやるべきなのかな・・・？😢
 </form>
 
 </div>
-</article>
 
 
 
@@ -318,4 +327,6 @@ CSSでやるべきなのかな・・・？😢
 
 
 <p><a href="#">先頭に戻る</a></p>
-</bo
+<script src="main.js"></script>
+</body>
+</html>

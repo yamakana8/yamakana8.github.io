@@ -118,13 +118,15 @@ background-image:linear-gradient(180deg,#fff,rgb(188, 252, 11) 40%,rgb(4, 248, 3
  }
 
 
-.lifeplan{
+/* .lifeplan{
 width: 700px;
 border: 1px solid rgb(32, 31, 37);
 padding:8px 15px;
 box-shadow:8px 8px 5px rgb(60, 60, 68);
 background-image:linear-gradient(180deg,#fff,rgba(255, 0, 157, 0.267) 40%,rgba(138, 4, 248, 0.384));
-}
+} */
+
+
 
 
 h2{
@@ -159,5 +161,51 @@ background-color:antiquewhite;
 .culasu{
 color:red;
 font-family:cursive
+
+}
+
+
+.container3{
+margin:30px;
+width:600px;
+}
+
+.menu{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+}
+
+.menu li a{
+display:inline-block;
+width:150px;
+text-align:center;
+padding:8px;
+background-color:rgb(251, 198, 253);
+text-decoration:none;
+border-radius:20px 20px 0 0;
+}
+
+.menu li a.active{
+  background:rgb(244, 135, 246);
+  color:#000;
+}
+
+.menu li a:not(.active):hover{
+  opacity:0.5;
+  transition:opacity 0.4s;
+}
+
+.content.active{
+  background:rgb(244, 135, 248);
+  color: #000;
+  min-height:150px;
+  padding:12px;
+  display:block;
+}
+
+.content{
+  display:none;
 
 }
