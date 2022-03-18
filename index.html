@@ -22,9 +22,7 @@
       <td><a href="#4"div style="background-color:rgb(200, 252, 133);"><strong>&lt;div&gt;</strong></a></td></tr><tr>
       <td><a href="#5"div style="background-color:rgb(245, 46, 79);color: aliceblue;">逸失利益</a></td></tr><tr>
       <td><a href="#6"div style="background-color:rgb(253, 97, 7);color: aliceblue;">リスト</a></td></tr><tr>
-      <td><a href="#7"div style="background-color:rgb(245, 46, 79);color: aliceblue;">遺族年金※子供４人</a></td></tr><tr>
-      <td><a href="#8"div style="background-color:rgb(245, 46, 79);color: aliceblue;">遺族年金※子供２人</a></td></tr><tr>
-      <td><a href="#9"div style="background-color:rgb(245, 46, 79);color: aliceblue;">遺族年金※子供１人</a></td></tr>
+      <td><a href="#7"div style="background-color:rgb(245, 46, 79);color: aliceblue;">遺族年金</a></td></tr>
       </tbody>
       </table>
   </div>
@@ -134,8 +132,8 @@ CSSでやるべきなのかな・・・？😢
 <br><br>
 
 
-
- <div class="container3">
+■国から支払われる遺族年金額（会社員のケース）
+ <div class="container3"id="7">
    <ul class="menu">
      <li><a href="#"class="active"data-id="about">１８歳以下の子供が４人</a></li>
      <li><a href="#"data-id="service">１８歳以下の子供が2人</a></li>
@@ -143,31 +141,26 @@ CSSでやるべきなのかな・・・？😢
    </ul>
 
    <section class="content active"id="about">
-<strong>遺族年金　計算方法</strong>　※１８歳以下の子供が４人<br>
-  （遺族基礎年金78万900円と子の加算＋遺族厚生年金）<br>
-  
-  <strong>【遺族基礎年金】</strong><br>
+<strong>遺族年金</strong>　　※１８歳以下の子供が４人の場合のみ<br>
+
+ （A）<strong>【遺族基礎年金】</strong><br>
   <form oninput="result.value 
     =780900*(18-Number(e.value))
      +10785600-74900*Number(a.value)
      -74900*Number(b.value)
      -224700*Number(c.value)
-     -224700*Number(d.value);">
+     -224700*Number(e.value);">
    
-      まず、年間78万900円は、<br>
-      末っ子<input type="number" name="e" size="5">歳
-      が18歳になるまで受け取れる。<br>
-      さらに、子供の人数と年齢に応じて<br>
-      ＋（１８－１人目の子の年齢<input type="number" name="a" size="5">歳）×22万4700円<br>
-      ＋（１８－２人目の子の年齢<input type="number" name="b" size="5">歳）×22万4700円<br>
-      ＋（１８－３人目の子の年齢<input type="number" name="c" size="5">歳）×7万4900円<br>
-      ＋（１８－４人目の子の年齢<input type="number" name="d" size="5">歳）×7万4900円<br>
+      <!-- 末っ子の年齢を入力　<input type="number" name="e" size="5">歳<br> -->
+      <br>
+      １人目の子の年齢<input type="number" name="a" size="5">歳<br>
+      ２人目の子の年齢<input type="number" name="b" size="5">歳<br>
+      ３人目の子の年齢<input type="number" name="c" size="5">歳<br>
+      ４人目末子の年齢<input type="number" name="e" size="5">歳<br>
      
-      ＝ 
-      <output name="result"><strong>（遺族基礎年金の総額）</output>円</strong>
+      →→→<output name="result"><strong>（遺族基礎年金の総額）</output>円</strong>
      <br>
     </form>
-    一人目が１９歳になったら、２人目と３人目の子の金額が２２４７００円になる?
 
     <br><br>
   （B）<strong>【遺族厚生年金】</strong>
@@ -178,7 +171,7 @@ CSSでやるべきなのかな・・・？😢
    <br>
   </form>
   
-  【計算式の参照】
+  【計算式の参照】<br>
   平均標準報酬額×5.481／1,000×平成15年4月以後の被保険者期間の月数
 
 
@@ -194,8 +187,8 @@ CSSでやるべきなのかな・・・？😢
 </section>
 
 <section class="content"id="service">
- 遺族年金とは…（A）遺族基礎年金78万900円と子の人数に応じた加算額＋（B）遺族厚生年金 <br> <br>
- （A）<strong>【遺族基礎年金】</strong>　※１８歳以下の子供が２人のケース<br>
+  <strong>遺族年金</strong>　　※１８歳以下の子供が２人の場合のみ<br>
+  （A）<strong>【遺族基礎年金】</strong><br><br>
 
   <form oninput="result.value 
   =780900*(18-Number(c.value))
@@ -220,7 +213,7 @@ CSSでやるべきなのかな・・・？😢
    <br>
   </form>
   
-  【計算式の参照】
+  ↑※計算式・参照<br>
   平均標準報酬額×5.481／1,000×平成15年4月以後の被保険者期間の月数
 
 
